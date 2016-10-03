@@ -1,11 +1,12 @@
 {
     "require": {
         "silex/silex": "~2.0",
-        "twig/twig": "^1.25"
+        "twig/twig": "^1.25",
+        "doctrine/dbal": "^2.5"
     },
     "autoload" : {
         "psr-4" : {
-            "APP\\" : "app"
+            "BA\\" : "app"
         }
     }
 }
