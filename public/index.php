@@ -42,7 +42,7 @@ $app->get('/', function () use ($app){
     require  __DIR__ . "/../app/Models/Post.php";
     $post = new BA\Models\Post;
     //$post->;
-    die();
+    //die();
     return $app['twig']->render('home.twig');
 });
 $app->run();
