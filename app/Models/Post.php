@@ -1,6 +1,6 @@
 <?php
 
-namespace BA\Models
+namespace BA\Models;
 
 class Post
 {

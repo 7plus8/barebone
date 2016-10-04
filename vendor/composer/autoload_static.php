@@ -124,6 +124,7 @@ class ComposerStaticInit236c0328c70b2d4bd6baf0df6d1d5af8
     );
 
     public static $classMap = array (
+        'BA\\Models\\Image' => __DIR__ . '/../..' . '/app/Models/Image.php',
         'Doctrine\\Common\\Annotations\\Annotation' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation.php',
         'Doctrine\\Common\\Annotations\\AnnotationException' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php',
         'Doctrine\\Common\\Annotations\\AnnotationReader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationReader.php',

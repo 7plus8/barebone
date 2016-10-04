@@ -41,7 +41,7 @@ $app->get('/', function () use ($app){
     }
     require  __DIR__ . "/../app/Models/Post.php";
     $post = new BA\Models\Post;
-    $post->var_d();
+    //$post->;
     die();
     return $app['twig']->render('home.twig');
 });

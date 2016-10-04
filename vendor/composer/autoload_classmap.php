@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'BA\\Models\\Image' => $baseDir . '/app/Models/Image.php',
     'Doctrine\\Common\\Annotations\\Annotation' => $vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation.php',
     'Doctrine\\Common\\Annotations\\AnnotationException' => $vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php',
     'Doctrine\\Common\\Annotations\\AnnotationReader' => $vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationReader.php',
