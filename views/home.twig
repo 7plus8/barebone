@@ -1,5 +1,18 @@
 {% extends 'template/app.twig' %}
 
 {% block main %}
-	Home
+	<form action="#" method="post">
+		{{ app.uploadcare.widget.getInputTag('file_id') | raw }}
+		<button type="submit">Upload</button>
+	</form>
+{% endblock %}
+
+{% block scripts %}
+	<script>
+		var widget = uploadcare.SingleWidget('[role=uploadcare-uploader]');
+
+		widget.onUploadComplete(function(){
+			document.querySelector('.upload-form__button').style 'display: inline-block';
+		});
+	</script>
 {% endblock %}

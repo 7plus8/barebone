@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "838410578b3bea06ef5c66ff8deac51b",
-    "content-hash": "66de639e82a71f035a69fb0014b04f90",
+    "hash": "40310a211aee8ad83701581c9683054a",
+    "content-hash": "078fddd7ea670c31621833b8c72a4ad3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1100,6 +1100,53 @@
                 "templating"
             ],
             "time": "2016-09-21 23:05:12"
+        },
+        {
+            "name": "uploadcare/uploadcare-php",
+            "version": "v1.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uploadcare/uploadcare-php.git",
+                "reference": "cdbba2adfc6bafd95e6cd99ad20a6fe028cbe47a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uploadcare/uploadcare-php/zipball/cdbba2adfc6bafd95e6cd99ad20a6fe028cbe47a",
+                "reference": "cdbba2adfc6bafd95e6cd99ad20a6fe028cbe47a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Uploadcare": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Uploadcare, LLC",
+                    "email": "hello@uploadcare.com"
+                }
+            ],
+            "description": "Uploadcare API binding for PHP",
+            "homepage": "https://uploadcare.com",
+            "keywords": [
+                "cdn",
+                "cloud",
+                "files",
+                "image management",
+                "upload",
+                "uploadcare"
+            ],
+            "time": "2016-05-25 17:22:20"
         }
     ],
     "packages-dev": [],

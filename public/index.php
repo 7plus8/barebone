@@ -24,6 +24,8 @@ $app->register(new Silex\Provider\DoctrineServiceProvider,
     ]
 ]);
 
+$app->register(new BA\Providers\UploadcareProvider);
+
 $app->get('/', function () use ($app){
 
     $posts = $app['db']->prepare("SELECT * FROM posts");
@@ -32,11 +34,11 @@ $app->get('/', function () use ($app){
     $posts = $posts->fetchAll(\PDO::FETCH_CLASS, \BA\Models\Image::class);
     foreach ($posts as $post)
     {
-        echo "<pre>";
+        //echo "<pre>";
         $tags = (json_decode($post->tags));
         foreach ($tags as $tag)
         {
-            print_r($tag);
+        //    print_r($tag);
         }
     }
     require  __DIR__ . "/../app/Models/Post.php";
